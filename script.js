@@ -11,6 +11,7 @@ hamburger.addEventListener('click', (event) =>{
 })
 
 document.querySelectorAll('.nav-link').forEach(e => e.addEventListener('click',()=>{
+    body.classList.remove('active');
     hamburger.classList.remove('active');
     navMenu.classList.remove('active');
     overlay.classList.remove('active');
